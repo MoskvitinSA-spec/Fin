@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru" data-page="index">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="referrer" content="no-referrer">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Дашборды">
+  <link rel="manifest" href="manifest.webmanifest">
+  <title>Дашборды</title>
+  <style>
+    html,body{margin:0;background:#0e0f12;color:#f4efe6;font-family:"Avenir Next","Segoe UI",system-ui,sans-serif;}
+    .fin-wrap{max-width:420px;margin:0 auto;padding:72px 24px;}
+    .fin-brand{font-size:13px;font-weight:700;letter-spacing:.34em;text-transform:uppercase;margin-bottom:32px;}
+    .fin-brand span{display:inline-block;width:7px;height:7px;margin-right:10px;background:#c4453c;border-radius:1px;vertical-align:1px;}
+    #fin-pass{width:100%;box-sizing:border-box;font-size:17px;padding:12px;border-radius:4px;border:1px solid rgba(242,236,224,.16);background:#16171c;color:#f4efe6;}
+    #fin-go{margin-top:12px;width:100%;min-height:44px;font-size:15px;font-weight:600;border-radius:4px;border:1px solid rgba(242,236,224,.16);background:#c4453c;color:#fff;}
+    #fin-err{color:#9a958b;font-size:13px;min-height:18px;margin-top:10px;}
+    #fin-loading{color:#6e6a63;font-size:13px;}
+  </style>
+</head>
+<body>
+  <div class="fin-wrap">
+    <div class="fin-brand"><span></span>Дашборды</div>
+    <div id="fin-loading">Загрузка…</div>
+    <form id="fin-login" hidden autocomplete="off">
+      <input id="fin-pass" type="password" placeholder="Кодовая фраза" autocapitalize="off" autocorrect="off" spellcheck="false" autocomplete="current-password">
+      <button id="fin-go" type="submit">Открыть</button>
+      <div id="fin-err"></div>
+    </form>
+  </div>
+  <script src="app.js?v=1efcd580b7"></script>
+</body>
+</html>
